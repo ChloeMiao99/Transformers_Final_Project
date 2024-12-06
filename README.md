@@ -37,9 +37,6 @@ Traditional methods for key frame detection rely on handcrafted features (e.g., 
    - The feature differences are also logged, providing insights into why certain frames were chosen.
 
 
-### Challenges Addressed
-Traditional key frame detection often relies on handcrafted features, which are limited in their adaptability. This project leverages the power of Vision Transformers to learn robust, high-dimensional visual representations for detecting changes in a data-driven manner.
-
 ### Significance
 This approach demonstrates the power of Vision Transformers in video analysis tasks. By leveraging their ability to process high-dimensional representations and focus on areas of interest, this project provides an efficient and flexible method for detecting key frames, adaptable to a wide range of applications.
 
