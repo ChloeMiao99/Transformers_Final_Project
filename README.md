@@ -72,13 +72,10 @@ By reducing the amount of redundant video data while preserving critical informa
 1. **Threshold Selection**:
    - The threshold for detecting significant feature differences is crucial. A low threshold may result in too many frames being classified as "key," making the output noisy and redundant. Conversely, a high threshold might miss important changes, especially subtle transitions in videos.
 
-2. **Computation Time**:
-   - Processing videos frame-by-frame with a transformer model is computationally intensive. While effective for small datasets or offline processing, this approach may not scale well to real-time applications or large video datasets.
-
-3. **Data Quality**:
+2. **Data Quality**:
    - The method assumes high-quality input frames with consistent resolutions and lighting. Factors like motion blur, low resolution, or varying frame rates can reduce the accuracy of feature extraction and key frame detection.
 
-5. **Attention Visualization**:
+3. **Attention Visualization**:
    - Although the project identifies key frames, it does not explicitly explain which regions of the frame contributed most to the decision. Adding attention visualizations (e.g., Grad-CAM) could improve interpretability.
 
 
