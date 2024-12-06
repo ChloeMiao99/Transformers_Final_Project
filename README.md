@@ -44,6 +44,17 @@ Traditional key frame detection often relies on handcrafted features, which are 
 This approach demonstrates the power of Vision Transformers in video analysis tasks. By leveraging their ability to process high-dimensional representations and focus on areas of interest, this project provides an efficient and flexible method for detecting key frames, adaptable to a wide range of applications.
 
 ## Model Card
+**Fine-tuned Vision Transformer (ViT) for Frame Difference Detection**
+
+- **Base Model**: `google/vit-base-patch16-224`
+- **Modification**: Added a fully connected layer to reduce dimensionality for contrastive loss training.
+- **Loss Function**: Contrastive Loss to enhance feature differentiation.
+
+**Sources and Permissions**
+- **Pre-trained Model**: Vision Transformer (`google/vit-base-patch16-224`) sourced from HuggingFace.
+
+## Interactive App
+- Built a Streamlit App that allows users to upload videos, view key frame detections and download a zip file contain the frames.
 
 ## Critical Analysis
 
@@ -95,3 +106,7 @@ By reducing the amount of redundant video data while preserving critical informa
   
 ## Resources & Citations
 
+* Quick Links to related papers
+	* [google-research/vision_transformer](https://github.com/google-research/vision_transformer)
+ 	* [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)
+  	* [arxiv-dives-vision-transformers-vit](https://www.oxen.ai/blog/arxiv-dives-vision-transformers-vit)
